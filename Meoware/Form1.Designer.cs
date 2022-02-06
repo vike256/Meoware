@@ -35,6 +35,7 @@
             this.button_minimize = new System.Windows.Forms.Button();
             this.button_exit = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.cb_lock_window = new System.Windows.Forms.CheckBox();
             this.button_open_growtopia = new System.Windows.Forms.Button();
             this.ProcOpenLabel = new System.Windows.Forms.Label();
             this.AttachLabel = new System.Windows.Forms.Label();
@@ -61,7 +62,7 @@
             this.panel1.Controls.Add(this.button_exit);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1067, 74);
             this.panel1.TabIndex = 0;
@@ -73,7 +74,7 @@
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Padding = new System.Windows.Forms.Padding(13, 12, 0, 0);
             this.pictureBox1.Size = new System.Drawing.Size(55, 74);
@@ -103,7 +104,7 @@
             this.button_minimize.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_minimize.ForeColor = System.Drawing.Color.White;
             this.button_minimize.Location = new System.Drawing.Point(907, 0);
-            this.button_minimize.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_minimize.Margin = new System.Windows.Forms.Padding(4);
             this.button_minimize.Name = "button_minimize";
             this.button_minimize.Size = new System.Drawing.Size(80, 74);
             this.button_minimize.TabIndex = 1;
@@ -121,7 +122,7 @@
             this.button_exit.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_exit.ForeColor = System.Drawing.Color.White;
             this.button_exit.Location = new System.Drawing.Point(987, 0);
-            this.button_exit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_exit.Margin = new System.Windows.Forms.Padding(4);
             this.button_exit.Name = "button_exit";
             this.button_exit.Size = new System.Drawing.Size(80, 74);
             this.button_exit.TabIndex = 0;
@@ -132,6 +133,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(60)))), ((int)(((byte)(95)))));
+            this.panel2.Controls.Add(this.cb_lock_window);
             this.panel2.Controls.Add(this.button_open_growtopia);
             this.panel2.Controls.Add(this.ProcOpenLabel);
             this.panel2.Controls.Add(this.AttachLabel);
@@ -140,10 +142,25 @@
             this.panel2.Controls.Add(this.button_cheats1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 74);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(200, 480);
             this.panel2.TabIndex = 1;
+            // 
+            // cb_lock_window
+            // 
+            this.cb_lock_window.AutoSize = true;
+            this.cb_lock_window.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.cb_lock_window.Font = new System.Drawing.Font("Segoe UI Semibold", 8.2F, System.Drawing.FontStyle.Bold);
+            this.cb_lock_window.ForeColor = System.Drawing.Color.White;
+            this.cb_lock_window.Location = new System.Drawing.Point(0, 387);
+            this.cb_lock_window.Name = "cb_lock_window";
+            this.cb_lock_window.Padding = new System.Windows.Forms.Padding(18, 0, 0, 6);
+            this.cb_lock_window.Size = new System.Drawing.Size(200, 29);
+            this.cb_lock_window.TabIndex = 6;
+            this.cb_lock_window.Text = "Always on top";
+            this.cb_lock_window.UseVisualStyleBackColor = true;
+            this.cb_lock_window.CheckedChanged += new System.EventHandler(this.cb_lock_window_CheckedChanged);
             // 
             // button_open_growtopia
             // 
@@ -153,7 +170,7 @@
             this.button_open_growtopia.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_open_growtopia.ForeColor = System.Drawing.Color.White;
             this.button_open_growtopia.Location = new System.Drawing.Point(0, 222);
-            this.button_open_growtopia.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_open_growtopia.Margin = new System.Windows.Forms.Padding(4);
             this.button_open_growtopia.Name = "button_open_growtopia";
             this.button_open_growtopia.Size = new System.Drawing.Size(200, 74);
             this.button_open_growtopia.TabIndex = 5;
@@ -200,7 +217,7 @@
             this.button_info.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_info.ForeColor = System.Drawing.Color.White;
             this.button_info.Location = new System.Drawing.Point(0, 148);
-            this.button_info.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_info.Margin = new System.Windows.Forms.Padding(4);
             this.button_info.Name = "button_info";
             this.button_info.Size = new System.Drawing.Size(200, 74);
             this.button_info.TabIndex = 2;
@@ -216,7 +233,7 @@
             this.button_cheats2.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_cheats2.ForeColor = System.Drawing.Color.White;
             this.button_cheats2.Location = new System.Drawing.Point(0, 74);
-            this.button_cheats2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_cheats2.Margin = new System.Windows.Forms.Padding(4);
             this.button_cheats2.Name = "button_cheats2";
             this.button_cheats2.Size = new System.Drawing.Size(200, 74);
             this.button_cheats2.TabIndex = 1;
@@ -232,7 +249,7 @@
             this.button_cheats1.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_cheats1.ForeColor = System.Drawing.Color.White;
             this.button_cheats1.Location = new System.Drawing.Point(0, 0);
-            this.button_cheats1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_cheats1.Margin = new System.Windows.Forms.Padding(4);
             this.button_cheats1.Name = "button_cheats1";
             this.button_cheats1.Size = new System.Drawing.Size(200, 74);
             this.button_cheats1.TabIndex = 0;
@@ -248,7 +265,7 @@
             this.panel3.Controls.Add(this.userControl_Cheats11);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(200, 74);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(867, 480);
             this.panel3.TabIndex = 2;
@@ -258,7 +275,7 @@
             this.userControl_Info1.BackColor = System.Drawing.Color.Transparent;
             this.userControl_Info1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.userControl_Info1.Location = new System.Drawing.Point(0, 0);
-            this.userControl_Info1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.userControl_Info1.Margin = new System.Windows.Forms.Padding(5);
             this.userControl_Info1.Name = "userControl_Info1";
             this.userControl_Info1.Size = new System.Drawing.Size(867, 480);
             this.userControl_Info1.TabIndex = 0;
@@ -268,7 +285,7 @@
             this.userControl_Cheats21.BackColor = System.Drawing.Color.Transparent;
             this.userControl_Cheats21.Dock = System.Windows.Forms.DockStyle.Fill;
             this.userControl_Cheats21.Location = new System.Drawing.Point(0, 0);
-            this.userControl_Cheats21.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.userControl_Cheats21.Margin = new System.Windows.Forms.Padding(5);
             this.userControl_Cheats21.Name = "userControl_Cheats21";
             this.userControl_Cheats21.Size = new System.Drawing.Size(867, 480);
             this.userControl_Cheats21.TabIndex = 2;
@@ -279,7 +296,7 @@
             this.userControl_Cheats11.BackColor = System.Drawing.Color.Transparent;
             this.userControl_Cheats11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.userControl_Cheats11.Location = new System.Drawing.Point(0, 0);
-            this.userControl_Cheats11.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.userControl_Cheats11.Margin = new System.Windows.Forms.Padding(5);
             this.userControl_Cheats11.Name = "userControl_Cheats11";
             this.userControl_Cheats11.Size = new System.Drawing.Size(867, 480);
             this.userControl_Cheats11.TabIndex = 1;
@@ -300,9 +317,10 @@
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Meoware";
             this.Shown += new System.EventHandler(this.Form1_Shown);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -333,6 +351,7 @@
         private System.Windows.Forms.Label AttachLabel;
         private System.Windows.Forms.Button button_open_growtopia;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.CheckBox cb_lock_window;
     }
 }
 

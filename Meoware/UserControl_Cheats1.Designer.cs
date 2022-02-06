@@ -61,9 +61,9 @@
             // 
             this.cb_antibounce.Dock = System.Windows.Forms.DockStyle.Top;
             this.cb_antibounce.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cb_antibounce.ForeColor = System.Drawing.Color.Lime;
+            this.cb_antibounce.ForeColor = System.Drawing.Color.White;
             this.cb_antibounce.Location = new System.Drawing.Point(0, 0);
-            this.cb_antibounce.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cb_antibounce.Margin = new System.Windows.Forms.Padding(4);
             this.cb_antibounce.Name = "cb_antibounce";
             this.cb_antibounce.Padding = new System.Windows.Forms.Padding(67, 25, 0, 0);
             this.cb_antibounce.Size = new System.Drawing.Size(289, 74);
@@ -82,7 +82,7 @@
             this.panel1.Controls.Add(this.cb_antibounce);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(289, 480);
             this.panel1.TabIndex = 2;
@@ -91,9 +91,9 @@
             // 
             this.cb_antislide.Dock = System.Windows.Forms.DockStyle.Top;
             this.cb_antislide.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cb_antislide.ForeColor = System.Drawing.Color.Lime;
+            this.cb_antislide.ForeColor = System.Drawing.Color.White;
             this.cb_antislide.Location = new System.Drawing.Point(0, 370);
-            this.cb_antislide.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cb_antislide.Margin = new System.Windows.Forms.Padding(4);
             this.cb_antislide.Name = "cb_antislide";
             this.cb_antislide.Padding = new System.Windows.Forms.Padding(67, 25, 0, 0);
             this.cb_antislide.Size = new System.Drawing.Size(289, 74);
@@ -106,9 +106,9 @@
             // 
             this.cb_antirespawn.Dock = System.Windows.Forms.DockStyle.Top;
             this.cb_antirespawn.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cb_antirespawn.ForeColor = System.Drawing.Color.Red;
+            this.cb_antirespawn.ForeColor = System.Drawing.Color.Gray;
             this.cb_antirespawn.Location = new System.Drawing.Point(0, 296);
-            this.cb_antirespawn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cb_antirespawn.Margin = new System.Windows.Forms.Padding(4);
             this.cb_antirespawn.Name = "cb_antirespawn";
             this.cb_antirespawn.Padding = new System.Windows.Forms.Padding(67, 25, 0, 0);
             this.cb_antirespawn.Size = new System.Drawing.Size(289, 74);
@@ -123,7 +123,7 @@
             this.cb_antipunch.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_antipunch.ForeColor = System.Drawing.Color.Gray;
             this.cb_antipunch.Location = new System.Drawing.Point(0, 222);
-            this.cb_antipunch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cb_antipunch.Margin = new System.Windows.Forms.Padding(4);
             this.cb_antipunch.Name = "cb_antipunch";
             this.cb_antipunch.Padding = new System.Windows.Forms.Padding(67, 25, 0, 0);
             this.cb_antipunch.Size = new System.Drawing.Size(289, 74);
@@ -136,9 +136,9 @@
             // 
             this.cb_antilava.Dock = System.Windows.Forms.DockStyle.Top;
             this.cb_antilava.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cb_antilava.ForeColor = System.Drawing.Color.Red;
+            this.cb_antilava.ForeColor = System.Drawing.Color.Gray;
             this.cb_antilava.Location = new System.Drawing.Point(0, 148);
-            this.cb_antilava.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cb_antilava.Margin = new System.Windows.Forms.Padding(4);
             this.cb_antilava.Name = "cb_antilava";
             this.cb_antilava.Padding = new System.Windows.Forms.Padding(67, 25, 0, 0);
             this.cb_antilava.Size = new System.Drawing.Size(289, 74);
@@ -151,9 +151,9 @@
             // 
             this.cb_anticheckpoint.Dock = System.Windows.Forms.DockStyle.Top;
             this.cb_anticheckpoint.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cb_anticheckpoint.ForeColor = System.Drawing.Color.Lime;
+            this.cb_anticheckpoint.ForeColor = System.Drawing.Color.White;
             this.cb_anticheckpoint.Location = new System.Drawing.Point(0, 74);
-            this.cb_anticheckpoint.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cb_anticheckpoint.Margin = new System.Windows.Forms.Padding(4);
             this.cb_anticheckpoint.Name = "cb_anticheckpoint";
             this.cb_anticheckpoint.Padding = new System.Windows.Forms.Padding(67, 25, 0, 0);
             this.cb_anticheckpoint.Size = new System.Drawing.Size(289, 74);
@@ -172,7 +172,7 @@
             this.panel2.Controls.Add(this.cb_antispike);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(289, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(289, 480);
             this.panel2.TabIndex = 3;
@@ -181,9 +181,9 @@
             // 
             this.cb_giveaway.Dock = System.Windows.Forms.DockStyle.Top;
             this.cb_giveaway.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cb_giveaway.ForeColor = System.Drawing.Color.Lime;
+            this.cb_giveaway.ForeColor = System.Drawing.Color.White;
             this.cb_giveaway.Location = new System.Drawing.Point(0, 370);
-            this.cb_giveaway.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cb_giveaway.Margin = new System.Windows.Forms.Padding(4);
             this.cb_giveaway.Name = "cb_giveaway";
             this.cb_giveaway.Padding = new System.Windows.Forms.Padding(67, 25, 0, 0);
             this.cb_giveaway.Size = new System.Drawing.Size(289, 74);
@@ -196,9 +196,9 @@
             // 
             this.cb_ghost.Dock = System.Windows.Forms.DockStyle.Top;
             this.cb_ghost.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cb_ghost.ForeColor = System.Drawing.Color.Lime;
+            this.cb_ghost.ForeColor = System.Drawing.Color.White;
             this.cb_ghost.Location = new System.Drawing.Point(0, 296);
-            this.cb_ghost.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cb_ghost.Margin = new System.Windows.Forms.Padding(4);
             this.cb_ghost.Name = "cb_ghost";
             this.cb_ghost.Padding = new System.Windows.Forms.Padding(67, 25, 0, 0);
             this.cb_ghost.Size = new System.Drawing.Size(289, 74);
@@ -211,9 +211,9 @@
             // 
             this.cb_frogmode.Dock = System.Windows.Forms.DockStyle.Top;
             this.cb_frogmode.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cb_frogmode.ForeColor = System.Drawing.Color.Lime;
+            this.cb_frogmode.ForeColor = System.Drawing.Color.White;
             this.cb_frogmode.Location = new System.Drawing.Point(0, 222);
-            this.cb_frogmode.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cb_frogmode.Margin = new System.Windows.Forms.Padding(4);
             this.cb_frogmode.Name = "cb_frogmode";
             this.cb_frogmode.Padding = new System.Windows.Forms.Padding(67, 25, 0, 0);
             this.cb_frogmode.Size = new System.Drawing.Size(289, 74);
@@ -226,9 +226,9 @@
             // 
             this.cb_fastinwater.Dock = System.Windows.Forms.DockStyle.Top;
             this.cb_fastinwater.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cb_fastinwater.ForeColor = System.Drawing.Color.Lime;
+            this.cb_fastinwater.ForeColor = System.Drawing.Color.White;
             this.cb_fastinwater.Location = new System.Drawing.Point(0, 148);
-            this.cb_fastinwater.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cb_fastinwater.Margin = new System.Windows.Forms.Padding(4);
             this.cb_fastinwater.Name = "cb_fastinwater";
             this.cb_fastinwater.Padding = new System.Windows.Forms.Padding(67, 25, 0, 0);
             this.cb_fastinwater.Size = new System.Drawing.Size(289, 74);
@@ -241,9 +241,9 @@
             // 
             this.cb_devmode.Dock = System.Windows.Forms.DockStyle.Top;
             this.cb_devmode.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cb_devmode.ForeColor = System.Drawing.Color.Lime;
+            this.cb_devmode.ForeColor = System.Drawing.Color.White;
             this.cb_devmode.Location = new System.Drawing.Point(0, 74);
-            this.cb_devmode.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cb_devmode.Margin = new System.Windows.Forms.Padding(4);
             this.cb_devmode.Name = "cb_devmode";
             this.cb_devmode.Padding = new System.Windows.Forms.Padding(67, 25, 0, 0);
             this.cb_devmode.Size = new System.Drawing.Size(289, 74);
@@ -256,9 +256,9 @@
             // 
             this.cb_antispike.Dock = System.Windows.Forms.DockStyle.Top;
             this.cb_antispike.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cb_antispike.ForeColor = System.Drawing.Color.Red;
+            this.cb_antispike.ForeColor = System.Drawing.Color.Gray;
             this.cb_antispike.Location = new System.Drawing.Point(0, 0);
-            this.cb_antispike.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cb_antispike.Margin = new System.Windows.Forms.Padding(4);
             this.cb_antispike.Name = "cb_antispike";
             this.cb_antispike.Padding = new System.Windows.Forms.Padding(67, 25, 0, 0);
             this.cb_antispike.Size = new System.Drawing.Size(289, 74);
@@ -277,7 +277,7 @@
             this.panel3.Controls.Add(this.cb_gravity);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel3.Location = new System.Drawing.Point(578, 0);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(289, 480);
             this.panel3.TabIndex = 4;
@@ -286,9 +286,9 @@
             // 
             this.cb_slide.Dock = System.Windows.Forms.DockStyle.Top;
             this.cb_slide.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cb_slide.ForeColor = System.Drawing.Color.Lime;
+            this.cb_slide.ForeColor = System.Drawing.Color.White;
             this.cb_slide.Location = new System.Drawing.Point(0, 370);
-            this.cb_slide.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cb_slide.Margin = new System.Windows.Forms.Padding(4);
             this.cb_slide.Name = "cb_slide";
             this.cb_slide.Padding = new System.Windows.Forms.Padding(67, 25, 0, 0);
             this.cb_slide.Size = new System.Drawing.Size(289, 74);
@@ -301,9 +301,9 @@
             // 
             this.cb_noclip.Dock = System.Windows.Forms.DockStyle.Top;
             this.cb_noclip.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cb_noclip.ForeColor = System.Drawing.Color.Lime;
+            this.cb_noclip.ForeColor = System.Drawing.Color.White;
             this.cb_noclip.Location = new System.Drawing.Point(0, 296);
-            this.cb_noclip.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cb_noclip.Margin = new System.Windows.Forms.Padding(4);
             this.cb_noclip.Name = "cb_noclip";
             this.cb_noclip.Padding = new System.Windows.Forms.Padding(67, 25, 0, 0);
             this.cb_noclip.Size = new System.Drawing.Size(289, 74);
@@ -316,9 +316,9 @@
             // 
             this.cb_nightvision.Dock = System.Windows.Forms.DockStyle.Top;
             this.cb_nightvision.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cb_nightvision.ForeColor = System.Drawing.Color.Red;
+            this.cb_nightvision.ForeColor = System.Drawing.Color.Gray;
             this.cb_nightvision.Location = new System.Drawing.Point(0, 222);
-            this.cb_nightvision.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cb_nightvision.Margin = new System.Windows.Forms.Padding(4);
             this.cb_nightvision.Name = "cb_nightvision";
             this.cb_nightvision.Padding = new System.Windows.Forms.Padding(67, 25, 0, 0);
             this.cb_nightvision.Size = new System.Drawing.Size(289, 74);
@@ -331,9 +331,9 @@
             // 
             this.cb_modfly.Dock = System.Windows.Forms.DockStyle.Top;
             this.cb_modfly.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cb_modfly.ForeColor = System.Drawing.Color.Lime;
+            this.cb_modfly.ForeColor = System.Drawing.Color.White;
             this.cb_modfly.Location = new System.Drawing.Point(0, 148);
-            this.cb_modfly.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cb_modfly.Margin = new System.Windows.Forms.Padding(4);
             this.cb_modfly.Name = "cb_modfly";
             this.cb_modfly.Padding = new System.Windows.Forms.Padding(67, 25, 0, 0);
             this.cb_modfly.Size = new System.Drawing.Size(289, 74);
@@ -346,9 +346,9 @@
             // 
             this.cb_growz.Dock = System.Windows.Forms.DockStyle.Top;
             this.cb_growz.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cb_growz.ForeColor = System.Drawing.Color.Lime;
+            this.cb_growz.ForeColor = System.Drawing.Color.White;
             this.cb_growz.Location = new System.Drawing.Point(0, 74);
-            this.cb_growz.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cb_growz.Margin = new System.Windows.Forms.Padding(4);
             this.cb_growz.Name = "cb_growz";
             this.cb_growz.Padding = new System.Windows.Forms.Padding(67, 25, 0, 0);
             this.cb_growz.Size = new System.Drawing.Size(289, 74);
@@ -361,9 +361,9 @@
             // 
             this.cb_gravity.Dock = System.Windows.Forms.DockStyle.Top;
             this.cb_gravity.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cb_gravity.ForeColor = System.Drawing.Color.Lime;
+            this.cb_gravity.ForeColor = System.Drawing.Color.White;
             this.cb_gravity.Location = new System.Drawing.Point(0, 0);
-            this.cb_gravity.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cb_gravity.Margin = new System.Windows.Forms.Padding(4);
             this.cb_gravity.Name = "cb_gravity";
             this.cb_gravity.Padding = new System.Windows.Forms.Padding(67, 25, 0, 0);
             this.cb_gravity.Size = new System.Drawing.Size(289, 74);
@@ -386,7 +386,7 @@
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UserControl_Cheats1";
             this.Size = new System.Drawing.Size(867, 480);
             this.panel1.ResumeLayout(false);
