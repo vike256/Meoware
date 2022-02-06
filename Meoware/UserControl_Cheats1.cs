@@ -20,6 +20,7 @@ namespace Meoware
     public partial class UserControl_Cheats1 : UserControl
     {
         public Mem m = new Mem();
+        public int BaseAddress;
 
 
         public UserControl_Cheats1()
@@ -30,10 +31,7 @@ namespace Meoware
         private bool procOpen()
         {
             m.OpenProcess("Growtopia.exe");
-            if (m.OpenProcess("Growtopia.exe"))
-            {
-                return true;
-            }
+            if (m.OpenProcess("Growtopia.exe")) return true;
             return false;
         }
 
@@ -103,11 +101,11 @@ namespace Meoware
             {
                 if (cb_antirespawn.Checked)
                 {
-                    m.WriteMemory(Form1.Address.AntiRespawn, "bytes", "90 90 90 90");
+                    m.WriteMemory(Form1.Address.AntiRespawn, "bytes", "90 90");
                 }
                 else
                 {
-                    m.WriteMemory(Form1.Address.AntiRespawn, "bytes", "80 7B 24 00");
+                    m.WriteMemory(Form1.Address.AntiRespawn, "bytes", "4F 6E");
                 }
             }
         }
@@ -216,7 +214,7 @@ namespace Meoware
                 }
                 else
                 {
-                    if (!cb_noclip.Checked) m.WriteMemory(Form1.Address.NoClip, "bytes", "75 0C");
+                    if (!cb_noclip.Checked) m.WriteMemory(Form1.Address.NoClip, "bytes", "75 0B");
                     if (!cb_ghost.Checked) m.WriteMemory(Form1.Address.Ghost, "bytes", "74 05");
                     if (!cb_modfly.Checked) m.WriteMemory(Form1.Address.ModFly, "bytes", "74 5D");
                 }
@@ -308,7 +306,7 @@ namespace Meoware
                 }
                 else
                 {
-                    m.WriteMemory(Form1.Address.NoClip, "bytes", "75 0C");
+                    m.WriteMemory(Form1.Address.NoClip, "bytes", "75 0B");
                 }
             }
         }

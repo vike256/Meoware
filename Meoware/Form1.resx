@@ -117,6 +117,30 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vwAADr8BOAVTJAAAA/NJREFUWEedlj1oFVEQhY1JMEFQrGIKC39KEQUbRWy01sran0IEC0ErCUbFwk5E
+        bMTCLoViYyOIFoJoCkGRgNEgiLESjIU/mGh2PefmznJ2du97e10Yzrd3zry53Hlv960qy3IgxmpRZZ9P
+        MVXZ55U7e22DalaumXswVdnnlXO8YYNqVm6YE0xV9nnlHG9gPcGsQlFln1fO8VZsJ2iJnmbHVGWfV87x
+        KocT/K9Cxz6vnONVptZG7A0pDoVuLcU5XmVqYD3BlFmZquzzyjleZWrFdoJqSHGtMGqKc7zKVOXGczDF
+        VOVBxJGiKG4tF8UUdAIxJnn1UrswVTnku4yYWjE2Mop4VOAG+gMb/AwtoF8gu9QbtQtTlat8vxG3FV6K
+        m7uOGI3rO7HBGdxfjR7zDmL9mtwHhW8MMSlrtbxyrxFTlUMeDefw4fPgIVlv9SKG4f2LmsvQHYi9WNuC
+        +2nEvehtq6s4NWKqcpXHBy+i0XNZT3oRQ9wgT9wu4+WyvAtJ1VXcNmJqshANZ7HJX9DxuJb0IlY2WBSf
+        UDMbvxpPwUuIO87byn7EVOWamYEGF6ElGryC7EOMIIZjcOymjJG4wYuIE4jfiHHUvoaeR761h3DjVafs
+        zYHxwWuhL21U8VSSl3lMKy6K3ZDWHqK1V50mvFmZuh4NbuIkfoLDZY15tbFuDnWPIf16BLYT1IQ3K9e8
+        2OQ5aO7mvqFuK7BTDz9ib1am1rxodCNnc4GL4jikcw//I0kxVZk6iGbvoeHqsrmgK6fXtUfyOahMVQ55
+        NDoFDZc1x/j4i51GvEV8xP08dA46Ey3c4DZIpx5kO8FGQrStcCOafofqyXxAHABq3cG/ZXkM63xmrpxo
+        8/tnXl2ruNeIqcpVHk0OQa3hOxzbaeg6y8fga/Er1t9EXoD6EVde0RqnRkxVruXR5Gjc3APIBjR/Ar4f
+        8+ZZg+DIp7gGfQZljY248oo2uG3EfQvR9QyU10kEX2cL2CSfbVUd1vj/sIR3gmu4vy0j7tvD2I+Yqlwz
+        G6PJBf0+QR8iXlg+rm2n509RHI73Z6FtI64+t411xFTlhtkYTa4gZm0NpzSJ+2nLR88enOoi/lVs4jru
+        9+N+Cbo5enr2MNYTtESXQv7lZ1gdg38OvNf/ZzSPrfVlO0FL9DQ7pir7vHKOVznrVadMVfZ55RyvMrU2
+        Ym9IcSh0aynO8SpTA+sJpszKVGWfV87xKlMrthNUQ4prhVFTnONVpio3noMppir7vHKOV5mqHPJdRkxV
+        9nnlHK8yVbnK9xtxsrCFc7zKVOVavteIqco+r5zjVaYq+3xyxFRln1fO8SpTlX0+cNuIOxWKdvUqU5V9
+        PnI58A+2elpqgr97NgAAAABJRU5ErkJggg==
+</value>
+  </data>
   <metadata name="BGWorker.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>

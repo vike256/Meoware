@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Diagnostics;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -103,6 +104,10 @@ namespace Meoware
         // Show Cheats 1 tab and hide others
         private void button_cheats1_Click(object sender, EventArgs e)
         {
+            button_info.BackColor = Color.FromArgb(40, 60, 95);
+            button_cheats2.BackColor = Color.FromArgb(40, 60, 95);
+            button_cheats1.BackColor = Color.FromArgb(65, 80, 130);
+
             userControl_Info1.Hide();
             userControl_Cheats21.Hide();
             userControl_Cheats11.Show();
@@ -112,6 +117,10 @@ namespace Meoware
         // Show Cheats 2 tab and hide others
         private void button_cheats2_Click(object sender, EventArgs e)
         {
+            button_info.BackColor = Color.FromArgb(40, 60, 95);
+            button_cheats2.BackColor = Color.FromArgb(65, 80, 130);
+            button_cheats1.BackColor = Color.FromArgb(40, 60, 95);
+
             userControl_Cheats11.Hide();
             userControl_Info1.Hide();
             userControl_Cheats21.Show();
@@ -121,6 +130,10 @@ namespace Meoware
         // Show Info tab and hide others
         private void button_info_Click(object sender, EventArgs e)
         {
+            button_info.BackColor = Color.FromArgb(65, 80, 130);
+            button_cheats2.BackColor = Color.FromArgb(40, 60, 95);
+            button_cheats1.BackColor = Color.FromArgb(40, 60, 95);
+
             userControl_Cheats11.Hide();
             userControl_Cheats21.Hide();
             userControl_Info1.Show();
@@ -181,9 +194,9 @@ namespace Meoware
             var AIC = await AoBScan("76 08 32 C0 48 83 C4 30 5B C3 F3 0F 10 05 ?? ?? ?? 00 F3 0F 59 05 ?? ?? ?? 00 0F 29 74 24 20 F3 0F 10 35 ?? ?? ?? 00 F3 0F 5C F0");
             var BBP = await AoBScan("75 08 85 C9 0F 85 8B 00 00 00 C7 05 ?? ?? ?? 00 01 00 00 00 48 8B 8B ?? 01 00 00 48 85 C9 74 75 E8 ?? ?? ?? 00 84 C0 74 6C 48 C7 44 24 40 00 00 00 00 48 C7 44 24 30 00 00 00 00");
 
-            mem.WriteMemory(PBP, "bytes", "0x90 0x90 0x90 0x90 0x90");
-            mem.WriteMemory(AIC, "bytes", "0x90 0x90");
-            mem.WriteMemory(BBP, "bytes", "0x90 0x90");
+            mem.WriteMemory(PBP, "bytes", "90 90 90 90 90");
+            mem.WriteMemory(AIC, "bytes", "90 90");
+            mem.WriteMemory(BBP, "bytes", "90 90");
 
             Address.BanBypass = await AoBScan("75 08 85 C9 0F 85 8B 00 00 00 C7 05 ?? ?? ?? 00 01 00 00 00 48 8B 8B 98 01 00 00 48 85 C9 74");
             Address.AntiSlide = await AoBScan("75 03 45 8B FC 48 8B 45 07 44 88 BF ?? ?? 00 00 0F B7 58 04 E8 ?? ?? ?? FF 8B 8F ?? ?? 00 00 4C 8B BC 24 A0 00 00 00 4C 8B B4 24 E0 00 00 00 48 8B 40 08 48 8B B4 24 D8 00 00 00 48 69 D3 ?? ?? 00 00");
@@ -192,14 +205,15 @@ namespace Meoware
             Address.AntiLava = await AoBScan("75 07 83 8B ?? ?? 00 00 40 48 8D 8B ?? ?? 00 00 33 D2 48 83 C4 40 5B");
             Address.AntiCheckPoint = await AoBScan("83 7C 02 04 1B 0F 94 C0 48 83 C4 20 5B C3");
             Address.AntiPunch = await AoBScan("0F 85 C0 00 00 00 E8 ?? ?? ?? FF 48 8B C8 E8 ?? ?? ?? FF 48 8B C8 48 8D 55 C7 E8 ?? ?? 00 00 48 8B D0 49 8B CE E8 ?? ?? ?? 00 84 C0");
-            Address.AntiRespawn = await AoBScan("80 7B 24 00 75 10 8B 43 28 01 43 14 83 C0 03 01 43 58 83 43 18 03 66 0F 6E 43 28 0F 5B C0");
+            Address.AntiRespawn = await AoBScan("4F 6E 53 65 74 50 6F 73 00 00 00 00 00 00 00 00 4F 6E 53 65 74 46 72 65 65 7A 65 53 74 61 74 65");
+            //Address.AntiRespawnMaybeOld = await AoBScan("80 7B 24 00 75 10 8B 43 28 01 43 14 83 C0 03 01 43 58 83 43 18 03 66 0F 6E 43 28 0F 5B C0");
             Address.AntiSpike = await AoBScan("0F 85 67 05 00 00 48 85 ?? ?? 32 48 8B CA E8 ?? ?? 04 00 B9 FE 18 00 00 66 3B C1");
             Address.FastFall = await AoBScan("0F 84 ?? 00 00 00 F3 0F 10 81 ?? 01 00 00 F3 0F 10 89 ?? ?? 00 00 F3 41 0F 59 C0 F3 0F 5C C8 41 0F 2F CA 76 2A F3 0F 10 89 ?? 01 00 00 0F 28 C1 F3 41 0F 58 CA F3 41 0F 59 C0 F3 41 0F 58 C2 F3 0F 11 89 ?? ?? 00 00 F3 0F 11 81 ?? ?? 00 00 ?? ?? ?? ?? ?? ?? 00");
             Address.ForceFps = await AoBScan("0F 84 ?? 01 00 00 E8 ?? ?? ?? 00 48 8B D8 8B BE ?? 02 00 00 E8 ?? ?? ?? 00 C1 E8 0A 8B C8 0F 57 C0 F3 48 0F 2A C1 F3 0F 10 35 ?? ?? ?? 00 F3 0F 59 C6 0F 5A F8");
             Address.NightVision = await AoBScan("75 06 48 83 C4 20 5B C3 B8 F8 0D 00 00 66 39 43 12 75 67 48 8B 4B 20 48 8B 01 48 3B C1");
             Address.Slide = await AoBScan("75 0E B8 2A 15 00 00 66 39 87 ?? ?? 00 00 75 03 45 8B FC");
             Address.Tractor = await AoBScan("0F 85 ?? 00 00 00 49 8D 8E ?? ?? 00 00 E8 ?? ?? ?? FF 84 C0 0F 84 ?? 00 00 00 48 83 7E 28 00 0F 84 ?? 00 00 00 48 8B CE E8 ?? ?? 04 00 0F B7 D8");
-            Address.NoClip = await AoBScan("75 0C 32 C0 48 83 C4 20 41 5F 41 5E 5F C3 45 84 C9 74 0D 8B 41 14 83 F8 02 74 E7 83 F8 07 74 E2 8B 41 14 83 F8 05");
+            Address.NoClip = await AoBScan("75 0B 32 C0 48 83 C4 20 41 5F ?? ?? C3 45 84 C9 74 0D 8B 41 14 83 F8 02 74 ?? 83 F8 07 74 ?? 8B 41 14 83 F8 05");
             Address.Gravity = await AoBScan("0F 84 ?? 01 00 00 80 BB ?? ?? 00 00 00 F3 0F 10 05 ?? ?? ?? 00 F3");
             Address.HighJump = await AoBScan("75 1D F3 0F 10 0D ?? ?? ?? 00 F3 0F 10 05 ?? ?? ?? 00 F3 41 0F 59 C8 F3 0F 5C C1 F3 0F 59 F8 80 BB A1 01 00 00 00 0F 84 ?? 01 00 00 80 BB ?? ?? 00 00 00");
             Address.Ghost = await AoBScan("74 05 E8 ?? ?? FF FF 48 8B CE E8 ?? ?? ?? ?? 48 83 BE 20 01 00 00 00 75 08 48 8B CE E8 ?? ?? 00 00 4C 8D 9C 24 28 01 00 00 41 0F 28 73 E8");
@@ -218,7 +232,7 @@ namespace Meoware
             Address.DevMode = await AoBScan("74 5F E8 ?? ?? ?? FF 48 69 D6 ?? 06 00 00 48 8B 40 08 83 7C 02 04 00 75 25 41 83 C9 FF");
             Address.AntiKnockBack = await AoBScan("48 8B D9 F3 0F 10 49 0C 49 8B F8 F3 0F 5C 02 F3 0F 5C 4A 04 48 8D 4C 24 40 0F 29 74 24 20 F3 0F 11 44 24 40 F3 0F 11 4C 24 44");
             mem.WriteMemory(Address.BanBypass, "bytes", "90 90");
-            AttachLabel.Text = "ON";
+            AttachLabel.Text = "Attached";
             AttachLabel.ForeColor = Color.FromArgb(0, 255, 0);
             mem.WriteMemory(Address.ForceFps, "bytes", "90 90 90 90 90 90");
             return;
