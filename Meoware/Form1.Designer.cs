@@ -47,6 +47,7 @@
             this.userControl_Cheats21 = new Meoware.UserControl_Cheats2();
             this.userControl_Cheats11 = new Meoware.UserControl_Cheats1();
             this.BGWorker = new System.ComponentModel.BackgroundWorker();
+            this.label_build_version = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -56,6 +57,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(80)))), ((int)(((byte)(130)))));
+            this.panel1.Controls.Add(this.label_build_version);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.button_minimize);
@@ -309,6 +311,19 @@
             this.BGWorker.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.BGWorker_ProgressChanged);
             this.BGWorker.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.BGWorker_RunWorkerCompleted);
             // 
+            // label_build_version
+            // 
+            this.label_build_version.BackColor = System.Drawing.Color.Transparent;
+            this.label_build_version.Dock = System.Windows.Forms.DockStyle.Right;
+            this.label_build_version.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_build_version.ForeColor = System.Drawing.Color.White;
+            this.label_build_version.Location = new System.Drawing.Point(757, 0);
+            this.label_build_version.Name = "label_build_version";
+            this.label_build_version.Size = new System.Drawing.Size(150, 74);
+            this.label_build_version.TabIndex = 0;
+            this.label_build_version.Text = "Build 0.1";
+            this.label_build_version.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -352,6 +367,7 @@
         private System.Windows.Forms.Button button_open_growtopia;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.CheckBox cb_lock_window;
+        private System.Windows.Forms.Label label_build_version;
     }
 }
 
