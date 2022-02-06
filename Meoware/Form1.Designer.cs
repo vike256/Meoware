@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label_build_version = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.button_minimize = new System.Windows.Forms.Button();
@@ -43,11 +44,10 @@
             this.button_cheats2 = new System.Windows.Forms.Button();
             this.button_cheats1 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.BGWorker = new System.ComponentModel.BackgroundWorker();
             this.userControl_Info1 = new Meoware.UserControl_Info();
             this.userControl_Cheats21 = new Meoware.UserControl_Cheats2();
             this.userControl_Cheats11 = new Meoware.UserControl_Cheats1();
-            this.BGWorker = new System.ComponentModel.BackgroundWorker();
-            this.label_build_version = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -69,6 +69,19 @@
             this.panel1.Size = new System.Drawing.Size(1067, 74);
             this.panel1.TabIndex = 0;
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
+            // 
+            // label_build_version
+            // 
+            this.label_build_version.BackColor = System.Drawing.Color.Transparent;
+            this.label_build_version.Dock = System.Windows.Forms.DockStyle.Right;
+            this.label_build_version.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_build_version.ForeColor = System.Drawing.Color.White;
+            this.label_build_version.Location = new System.Drawing.Point(757, 0);
+            this.label_build_version.Name = "label_build_version";
+            this.label_build_version.Size = new System.Drawing.Size(150, 74);
+            this.label_build_version.TabIndex = 0;
+            this.label_build_version.Text = "Build 0.1";
+            this.label_build_version.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox1
             // 
@@ -272,6 +285,13 @@
             this.panel3.Size = new System.Drawing.Size(867, 480);
             this.panel3.TabIndex = 2;
             // 
+            // BGWorker
+            // 
+            this.BGWorker.WorkerReportsProgress = true;
+            this.BGWorker.DoWork += new System.ComponentModel.DoWorkEventHandler(this.BGWorker_DoWork);
+            this.BGWorker.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.BGWorker_ProgressChanged);
+            this.BGWorker.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.BGWorker_RunWorkerCompleted);
+            // 
             // userControl_Info1
             // 
             this.userControl_Info1.BackColor = System.Drawing.Color.Transparent;
@@ -303,26 +323,6 @@
             this.userControl_Cheats11.Size = new System.Drawing.Size(867, 480);
             this.userControl_Cheats11.TabIndex = 1;
             this.userControl_Cheats11.Visible = false;
-            // 
-            // BGWorker
-            // 
-            this.BGWorker.WorkerReportsProgress = true;
-            this.BGWorker.DoWork += new System.ComponentModel.DoWorkEventHandler(this.BGWorker_DoWork);
-            this.BGWorker.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.BGWorker_ProgressChanged);
-            this.BGWorker.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.BGWorker_RunWorkerCompleted);
-            // 
-            // label_build_version
-            // 
-            this.label_build_version.BackColor = System.Drawing.Color.Transparent;
-            this.label_build_version.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label_build_version.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_build_version.ForeColor = System.Drawing.Color.White;
-            this.label_build_version.Location = new System.Drawing.Point(757, 0);
-            this.label_build_version.Name = "label_build_version";
-            this.label_build_version.Size = new System.Drawing.Size(150, 74);
-            this.label_build_version.TabIndex = 0;
-            this.label_build_version.Text = "Build 0.1";
-            this.label_build_version.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Form1
             // 
